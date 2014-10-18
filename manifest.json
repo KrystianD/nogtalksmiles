@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "No gtalk smiles!",
+  "description": "This extension removes gtalk smiles.",
+  "version": "1.0",
+	"author": "Krystian Dużyński",
+	"icons": {
+		"32": "icon32.png",
+		"48": "icon48.png"
+	},
+
+	"content_scripts": [
+    {
+      "matches": ["https://talkgadget.google.com/*"],
+			"all_frames": true,
+			"run_at": "document_start",
+      "js": ["background.js"]
+    }
+  ]
+}
