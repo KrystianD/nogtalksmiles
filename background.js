@@ -8,6 +8,7 @@ function f()
 		rpl(c, "e1f632", ":O");
 		rpl(c, "e1f600", ":D");
 		rpl(c, "e1f61b", ":P");
+		rpl(c, "e1f61c", ";p");
 		rpl(c, "e1f610", ":|");
 		rpl(c, "e1f61e", ":(");
 		rpl(c, "e1f603", ":)");
