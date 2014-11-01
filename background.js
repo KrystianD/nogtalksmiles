@@ -1,4 +1,4 @@
-function f()
+function replaceEmotes()
 {
 	var divs = document.getElementsByTagName("div");
 	for (var i = 0; i < divs.length; i++)
@@ -26,9 +26,5 @@ function rpl(c, cl, txt)
 		c.innerHTML = txt;
 	}
 }
-f();
-function nodeInsertedCallback(event)
-{
-	f();
-};
-document.addEventListener('DOMNodeInserted', nodeInsertedCallback);
+replaceEmotes();
+document.addEventListener('DOMNodeInserted', replaceEmotes);
