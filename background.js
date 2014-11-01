@@ -14,6 +14,8 @@ function f()
 		rpl(c, "e1f603", ":)");
 		rpl(c, "e1f49c", "<3");
 		rpl(c, "e1f626", "D:");
+		rpl(c, "e1f609", ";)");
+		rpl(c, "e1f615", ":/");
 	}
 }
 function rpl(c, cl, txt)
