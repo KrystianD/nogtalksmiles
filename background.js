@@ -1,29 +1,32 @@
+var map = [
+	"e1f617", ":*",
+	"e1f632", ":O",
+	"e1f600", ":D",
+	"e1f61b", ":P",
+	"e1f61c", ";p",
+	"e1f610", ":|",
+	"e1f61e", ":(",
+	"e1f603", ":)",
+	"e1f49c", "<3",
+	"e1f626", "D:",
+	"e1f609", ";)",
+	"e1f615", ":/",
+]
 function replaceEmotes()
 {
 	var divs = document.getElementsByTagName("div");
 	for (var i = 0; i < divs.length; i++)
 	{
-		var c = divs[i];
-		rpl(c, "e1f617", ":*");
-		rpl(c, "e1f632", ":O");
-		rpl(c, "e1f600", ":D");
-		rpl(c, "e1f61b", ":P");
-		rpl(c, "e1f61c", ";p");
-		rpl(c, "e1f610", ":|");
-		rpl(c, "e1f61e", ":(");
-		rpl(c, "e1f603", ":)");
-		rpl(c, "e1f49c", "<3");
-		rpl(c, "e1f626", "D:");
-		rpl(c, "e1f609", ";)");
-		rpl(c, "e1f615", ":/");
-	}
-}
-function rpl(c, cl, txt)
-{
-	if (c.className.indexOf(cl) != -1)
-	{
-		c.className = "";
-		c.innerHTML = txt;
+		var divObj = divs[i];
+		for (var j = 0; j < map.length; j += 2)
+		{
+			if (divObj.className.indexOf(map[j]) != -1)
+			{
+				divObj.className = "";
+				divObj.innerHTML = map[j + 1];
+				break;
+			}
+		}
 	}
 }
 replaceEmotes();
