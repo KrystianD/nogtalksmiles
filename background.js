@@ -11,6 +11,7 @@ var map = [
 	"e1f626", "D:",
 	"e1f609", ";)",
 	"e1f615", ":/",
+	"e1f62e", ":o",
 ]
 function replaceEmotes()
 {
